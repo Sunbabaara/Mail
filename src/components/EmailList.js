@@ -7,6 +7,7 @@ import ChevronRightIcon  from '@material-ui/icons/ChevronRight';
 import ChevronLeftIcon  from '@material-ui/icons/ChevronLeft';
 import KeyboardHideIcon  from '@material-ui/icons/KeyboardHide';
 import SettingsIcon  from '@material-ui/icons/Settings';
+import EmailRow from './EmailRow';
 
 
 function EmailList() {
@@ -42,7 +43,28 @@ function EmailList() {
        </div>
 
    </div>
-  </div>)
+   <div className='emailList_list'>
+       <EmailRow
+       title="Twitch"
+       subject="my fellows"
+       description="This is test"
+       time="10pm"
+       />
+        <EmailRow
+       title="Twitch"
+       subject="my fellows"
+       description="This is test"
+       time="10pm"
+       />
+        <EmailRow
+       title="Twitch"
+       subject="my fellows"
+       description="This is test"
+       time="10pm"
+       />
+       </div>
+  </div>
+  )
 
 }
 

@@ -12,6 +12,7 @@ function App() {
 
       <div className="app_body">
       <Sidebar/>
+      
       <Switch>
        <Route path="/mail">
         <Mail/>
