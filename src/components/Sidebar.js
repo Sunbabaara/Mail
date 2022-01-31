@@ -9,11 +9,13 @@ import PersonIcon from "@material-ui/icons/Person";
 import DuoIcon from "@material-ui/icons/Duo";
 import PhoneIcon from "@material-ui/icons/Phone";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
+import { Link, useHistory } from 'react-router-dom';
 
 function Sidebar() {
+    const history=useHistory();
   return (
       <div className='sidebar'>
-    <Button startIcon={<AddIcon fontSize="large"/>} className='sidebar_compos'>Compose</Button>
+    <Link to ="/compose"><Button onClick={()=> history.push("/compose")} startIcon={<AddIcon fontSize="large"/>} className='sidebar_compos'>  Compose </Button></Link>
   
      <SidebarOption Icon={InboxIcon} title="Inbox" number={21} selected={true}/>
      <SidebarOption Icon={StarIcon} title="Starred" number={14}/>
